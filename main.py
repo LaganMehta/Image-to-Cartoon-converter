@@ -17,6 +17,7 @@ top.title('Cartoonify Your Image !')
 top.configure(background='white')
 label=Label(top,background='#CDCDCD', font=('calibri',20,'bold'))
 
+# to upload an image
 def upload():
     ImagePath=easygui.fileopenbox()
     cartoonify(ImagePath)
@@ -83,7 +84,7 @@ def cartoonify(ImagePath):
     
     plt.show()
     
-    
+#to save the changes 
 def save(ReSized6, ImagePath):
     #saving an image using imwrite()
     newName="cartoonified_Image"
